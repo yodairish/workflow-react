@@ -1,0 +1,82 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var exec = require('child_process').exec;
+
+diff();
+
+/**
+ * Check git diff files
+ */
+function diff() {
+  exec('git diff --cached --name-only', function(error, stdout) {
+    var files = getDiffFiles(stdout);
+
+    lint(files);
+  });
+}
+
+/**
+ * Get all js and scss diff files
+ * @param {string} result of git diff
+ * @return {Object} object with files arrays
+ */
+function getDiffFiles(stdout) {
+  var folder = process.cwd() + '/',
+      files = {
+        js: [],
+        scss: []
+      };
+  
+  if (stdout) {
+    stdout.split('\n').forEach(function(file) {
+      if (file) {
+        if (/.js$/.test(file)) {
+          files.js.push(folder + file);
+        } else if (/.scss$/.test(file)) {
+          files.scss.push(folder + file);
+        }
+      }
+    });
+  }
+  
+  return files;
+}
+
+/**
+ * run gulp lint tasks for js and scss files
+ * @param {Object} object with files arrays
+ */
+function lint(files) {
+  if (!files.js.length && !files.scss.length) {
+    process.exit(0);
+  }
+  
+  lintFiles(files.js, 'js');
+  lintFiles(files.scss, 'css');
+}
+
+/**
+ * Run gulp task for files
+ * @param {Array} array of files
+ * @param {string} files type
+ */
+function lintFiles(files, type) {
+  if (!files || !files.length || !type) {
+    return;
+  }
+  
+  var task = type + 'lint',
+      gulpCmd = 'gulp ' + task + ' -files=' + files.join(',');
+
+  exec(gulpCmd, function(error) {
+    // mb need add checking by stdout
+    if (error) {
+      console.log(error);
+      console.log('\nBefore commit, you should fix the errors');
+    }
+    
+    process.exit(0);
+  });
+}

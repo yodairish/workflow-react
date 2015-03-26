@@ -1,0 +1,123 @@
+:root {
+  /**
+    *  Family
+    */
+  --fontFamily-default: 'sans-serif';
+  --fontFamily-display-4: 'Roboto-Light', var(--fontFamily-default);
+  --fontFamily-display-3: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-display-2: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-display-1: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-headline: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-title: 'Roboto-Medium', var(--fontFamily-default);
+  --fontFamily-subhead: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-body-2: 'Roboto-Medium', var(--fontFamily-default);
+  --fontFamily-body-1: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-caption: 'Roboto-Regular', var(--fontFamily-default);
+  --fontFamily-button: 'Roboto-Medium', var(--fontFamily-default);
+  /**
+    *  Sizes
+    */
+  --fontSize-display-4: 112px;
+  --fontSize-display-3: 56px;
+  --fontSize-display-2: 45px;
+  --fontSize-display-1: 34px;
+  --fontSize-headline: 24px;
+  --fontSize-title: 20px;
+  --fontSize-subhead: 16px;
+  --fontSize-body-2: 14px;
+  --fontSize-body-1: 14px;
+  --fontSize-caption: 12px;
+  --fontSize-button: 14px;
+  /**
+    *  Colors
+    */
+  --fontColor-display-4: #727272;
+  --fontColor-display-3: #727272;
+  --fontColor-display-2: #727272;
+  --fontColor-display-1: #727272;
+  --fontColor-headline: #212121;
+  --fontColor-title: #212121;
+  --fontColor-subhead: #212121;
+  --fontColor-body-2: #212121;
+  --fontColor-body-1: #212121;
+  --fontColor-caption: #727272;
+  --fontColor-button: #212121;
+}
+
+@define-mixin font-display-4 {
+  color: var(--fontColor-display-4);
+
+  font-family: var(--fontFamily-display-4);
+  font-size: var(--fontSize-display-4);
+}
+
+@define-mixin font-display-3 {
+  color: var(--fontColor-display-3);
+
+  font-family: var(--fontFamily-display-3);
+  font-size: var(--fontSize-display-3);
+}
+
+@define-mixin font-display-2 {
+  color: var(--fontColor-display-2);
+
+  font-family: var(--fontFamily-display-2);
+  font-size: var(--fontSize-display-2);
+}
+
+@define-mixin font-display-1 {
+  color: var(--fontColor-display-1);
+
+  font-family: var(--fontFamily-display-1);
+  font-size: var(--fontSize-display-1);
+}
+
+@define-mixin font-headline {
+  color: var(--fontColor-headline);
+
+  font-family: var(--fontFamily-headline);
+  font-size: var(--fontSize-headline);
+}
+
+@define-mixin font-title {
+  color: var(--fontColor-title);
+
+  font-family: var(--fontFamily-title);
+  font-size: var(--fontSize-title);
+}
+
+@define-mixin font-subhead {
+  color: var(--fontColor-subhead);
+
+  font-family: var(--fontFamily-subhead);
+  font-size: var(--fontSize-subhead);
+}
+
+@define-mixin font-body-2 {
+  color: var(--fontColor-body-2);
+
+  font-family: var(--fontFamily-body-2);
+  font-size: var(--fontSize-body-2);
+}
+
+@define-mixin font-body-1 {
+  color: var(--fontColor-body-1);
+
+  font-family: var(--fontFamily-body-1);
+  font-size: var(--fontSize-body-1);
+}
+
+@define-mixin font-caption {
+  color: var(--fontColor-caption);
+
+  font-family: var(--fontFamily-caption);
+  font-size: var(--fontSize-caption);
+}
+
+@define-mixin font-button {
+  color: var(--fontColor-button);
+
+  font-family: var(--fontFamily-button);
+  font-size: var(--fontSize-button);
+  text-transform: uppercase;
+}

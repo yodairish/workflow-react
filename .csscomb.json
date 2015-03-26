@@ -1,0 +1,246 @@
+{
+  "exclude": [
+    ".git/**",
+    "node_modules/**",
+    "bower_components/**"
+  ],
+  "remove-empty-rulesets": true,
+  "always-semicolon": true,
+  "color-case": "lower",
+  "block-indent": "  ",
+  "color-shorthand": true,
+  "element-case": "lower",
+  "eof-newline": true,
+  "leading-zero": false,
+  "quotes": "single",
+  "space-before-colon": "",
+  "space-after-colon": " ",
+  "space-before-combinator": " ",
+  "space-after-combinator": " ",
+  "space-between-declarations": "\n",
+  "space-before-opening-brace": " ",
+  "space-after-opening-brace": "\n",
+  "space-after-selector-delimiter": "\n",
+  "space-before-selector-delimiter": "",
+  "space-before-closing-brace": "\n",
+  "strip-spaces": true,
+  "tab-size": true,
+  "unitless-zero": true,
+  "sort-order": [
+    [
+      "position",
+      "z-index",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "transform"
+    ],
+    
+    [
+      "display",
+      
+      "width",
+      "min-width",
+      "max-width",
+      
+      "height",
+      "min-height",
+      "max-height",
+      
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      
+      "border",
+      "border-collapse",
+      "border-width",
+      "border-style",
+      "border-color",
+      "border-top",
+      "border-top-width",
+      "border-top-style",
+      "border-right",
+      "border-right-width",
+      "border-right-style",
+      "border-bottom",
+      "border-bottom-width",
+      "border-bottom-style",
+      "border-left",
+      "border-left-width",
+      "border-left-style",
+      
+      "border-radius",
+      "border-top-left-radius",
+      "border-top-right-radius",
+      "border-bottom-right-radius",
+      "border-bottom-left-radius",
+      "border-image",
+      "border-image-source",
+      "border-image-slice",
+      "border-image-width",
+      "border-image-outset",
+      "border-image-repeat",
+      
+      "visibility",
+      "float",
+      "clear",
+      
+      "overflow",
+      "overflow-x",
+      
+      "overflow-y",
+      "clip",
+      "zoom",
+      
+      "flex-direction",
+      "flex-order",
+      "flex-pack",
+      "flex-align",
+      
+      "box-sizing"
+    ],
+    
+    [
+      "color",
+      "background-color",
+      "background",
+      "border-top-color",
+      "border-right-color",
+      "border-bottom-color",
+      "border-left-color",
+      "outline-color"
+    ],
+    
+    [
+      "font",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "font-style",
+      "font-variant",
+      "font-size-adjust",
+      "font-stretch",
+      "font-effect",
+      "font-emphasize",
+      "font-emphasize-position",
+      "font-emphasize-style",
+      "font-smooth",
+      
+      "text-shadow",
+      
+      "line-height",
+      
+      "text-align",
+      "text-align-last",
+      "vertical-align",
+      
+      "white-space",
+      
+      "text-decoration",
+      "text-emphasis",
+      "text-emphasis-color",
+      "text-emphasis-style",
+      "text-emphasis-position",
+      "text-indent",
+      "text-justify",
+      "text-transform",
+      
+      "letter-spacing",
+      
+      "word-spacing",
+      
+      "text-outline",
+      "text-transform",
+      "text-wrap",
+      "text-overflow",
+      "text-overflow-ellipsis",
+      "text-overflow-mode",
+      
+      "word-wrap",
+      "word-break",
+      
+      "tab-size",
+      "hyphens"
+    ],
+    
+    [
+      "content",
+      "opacity",
+      "cursor",
+      "pointer-events",
+      "box-shadow",
+      
+      "list-style",
+      "list-style-position",
+      "list-style-type",
+      "list-style-image",
+      
+      "background-image",
+      "background-repeat",
+      "background-attachment",
+      "background-position",
+      "background-position-x",
+      "background-position-y",
+      "background-clip",
+      "background-origin",
+      "background-size",
+      
+      "transition",
+      "transition-delay",
+      "transition-timing-function",
+      "transition-duration",
+      "transition-property",
+      "transform-origin",
+      
+      "animation",
+      "animation-name",
+      "animation-duration",
+      "animation-play-state",
+      "animation-timing-function",
+      "animation-delay",
+      "animation-iteration-count",
+      "animation-iteration-count",
+      "animation-direction",
+      
+      "outline",
+      "outline-width",
+      "outline-style",
+      "outline-offset",
+      
+      "quotes",
+      "counter-reset",
+      "counter-increment",
+      "resize",
+      "user-select",
+      
+      "nav-index",
+      "nav-up",
+      "nav-right",
+      "nav-down",
+      "nav-left",
+      
+      "table-layout",
+      "empty-cells",
+      "caption-side",
+      "border-spacing",
+      "border-collapse",
+
+      "filter:progid:DXImageTransform.Microsoft.Alpha(Opacity",
+      "-ms-filter:\\'progid:DXImageTransform.Microsoft.Alpha",
+      "-ms-interpolation-mode",
+      "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader",
+      "box-decoration-break",
+      "filter:progid:DXImageTransform.Microsoft.gradient",
+      "-ms-filter:\\'progid:DXImageTransform.Microsoft.gradient"
+    ]
+  ]
+}

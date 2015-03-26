@@ -1,0 +1,64 @@
+{
+  "name": "yodairish-workflow-react",
+  "version": "0.1.0",
+  "description": "Base workflow for yodairish react projects",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yodairish/workflow-react.git"
+  },
+  "keywords": [
+    "lint",
+    "workflow"
+  ],
+  "author": "Yodairish",
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.8",
+    "babel-core": "^4.7.16",
+    "babel-jest": "^4.0.0",
+    "babel-loader": "^4.2.0",
+    "csswring": "^3.0.2",
+    "es6-shim": "^0.27.1",
+    "esprima-fb": "^13001.1001.0-dev-harmony-fb",
+    "flux": "^2.0.1",
+    "gemini": "^0.9.8",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.4",
+    "gulp-postcss": "^4.0.3",
+    "gulp-react": "^3.0.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-webpack": "^1.3.0",
+    "jest-cli": "^0.4.0",
+    "jscs": "^1.12.0",
+    "jscs-jsdoc": "^0.4.5",
+    "keymirror": "^0.1.1",
+    "merge-stream": "^0.1.7",
+    "postcss-custom-properties": "^3.1.0",
+    "postcss-import": "^5.0.3",
+    "react": "^0.13.1",
+    "webpack": "^1.7.3"
+  },
+  "jest": {
+    "setupEnvScriptFile": "<rootDir>/node_modules/es6-shim/es6-shim.js",
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testPathDirs": [
+      "<rootDir>/components",
+      "<rootDir>/js"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "es6-shim",
+      "keymirror"
+    ]
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yodairish/workflow-react/issues"
+  },
+  "homepage": "https://github.com/yodairish/workflow-react"
+}
